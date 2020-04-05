@@ -1,0 +1,38 @@
+/*Outer container with 50% center specs*/
+.container {
+  margin: auto;
+  width: 50%;
+  height: 800px;
+  border: 2px solid gray;
+  border-style: dashed;
+  overflow: auto;
+}
+/*Grid speccs, creating the 2x2 grid of squares and centering them accordingly*/
+.grid {
+  margin: 50px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 5px;
+}
+/*box specs and centering all content within*/
+.box {
+  border: 2px solid #696969;
+}
+
+/*Images in each box will be the same size and centered*/
+div.box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*Each paragraph will be centered under the pictures*/
+div.box p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 50%;
+}
